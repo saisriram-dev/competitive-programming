@@ -22,8 +22,7 @@ def solve():
         pref[i + 1] = pref[i] + max_vals[i]
 
     res = []
-    for _ in range(q):
-        l, r = map(int, input().split())
+    for l, r in queries:
         ans = pref[r] - pref[l - 1]
         res.append(str(ans))
 
