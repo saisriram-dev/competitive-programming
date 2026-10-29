@@ -26,6 +26,8 @@ def solve():
             return m + 1
         if i - 1 >= 0 and (i - 2 < 0 or col[i] != col[i - 2]):
             return m + 1
+
+    return m
     
 
 t = int(input())
