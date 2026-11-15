@@ -1,16 +1,18 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, q = map(int, input().split())
     a = list(map(int, input().split()))
     b = list(map(int, input().split()))
-    
+
     queries = []
     for _ in range(q):
         l, r = map(int, input().split())
         queries.append((l, r))
-        
+
     max_vals = [0] * n
     curr_max = 0
     for i in range(n - 1, -1, -1):
@@ -27,7 +29,8 @@ def solve():
         res.append(str(ans))
 
     return " ".join(res)
-    
+
+
 t = int(input())
 for _ in range(t):
     solve()

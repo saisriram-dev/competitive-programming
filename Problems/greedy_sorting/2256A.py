@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     arr = list(map(int, input().split()))

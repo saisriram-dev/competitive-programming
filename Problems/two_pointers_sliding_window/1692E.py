@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, s = map(int, input().split())
@@ -28,7 +30,7 @@ def solve():
         return -1
     else:
         return n - max_len
-    
+
 
 t = int(input())
 for _ in range(t):

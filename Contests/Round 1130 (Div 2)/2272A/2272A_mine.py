@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, k = map(int, input().split())
@@ -32,8 +34,9 @@ def solve():
         if arr[i] == missing[0]:
             idx = i
             break
-            
+
     return f"{max_idx + 1} {idx + 1}"
+
 
 t = int(input().strip())
 for _ in range(t):

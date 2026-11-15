@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, x = map(int, input().split())
@@ -36,6 +38,7 @@ def solve():
         else:
             low = mid + 1
     return low
+
 
 t = int(input())
 for _ in range(t):

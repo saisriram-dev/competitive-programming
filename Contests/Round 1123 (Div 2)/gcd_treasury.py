@@ -1,6 +1,8 @@
 import sys
 import math
+
 input = sys.stdin.readline
+
 
 def solve():
     n, x = map(int, input().split())
@@ -11,7 +13,7 @@ def solve():
         if x % i == 0:
             divisors.append(i)
             divisors.append(x // i)
-    
+
     # Don't forget x itself if x > 1
     if x > 1:
         divisors.append(x)
@@ -28,6 +30,7 @@ def solve():
         max_coins = max(curr, max_coins)
 
     return max_coins
+
 
 t = int(input().strip())
 for _ in range(t):

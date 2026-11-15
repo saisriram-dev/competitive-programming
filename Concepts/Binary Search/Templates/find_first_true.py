@@ -1,6 +1,7 @@
 def check():
     pass
 
+
 def find_first_true(low, high):
     ans = -1
 

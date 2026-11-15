@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -28,7 +30,7 @@ def solve():
             return m + 1
 
     return m
-    
+
 
 t = int(input())
 for _ in range(t):

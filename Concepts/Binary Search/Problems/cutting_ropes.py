@@ -13,9 +13,9 @@ def max_rope_length(lengths: list[float], K: int) -> float:
     # Fixed-iteration float binary search
     for _ in range(100):
         mid = low + (high - low) / 2.0
-        
+
         if check(mid):
-            low = mid   # Length 'mid' is possible; search higher
+            low = mid  # Length 'mid' is possible; search higher
         else:
             high = mid  # Length 'mid' is too long; search lower
 

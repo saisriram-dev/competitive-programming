@@ -1,12 +1,14 @@
 from collections import Counter
- 
+
+
 def get_mode(freq):
     if not freq:
         return 0
     max_f = max(freq.values())
     candidates = [v for v, f in freq.items() if f == max_f]
     return max(candidates)
- 
+
+
 t = int(input())
 for _ in range(t):
     n = int(input())

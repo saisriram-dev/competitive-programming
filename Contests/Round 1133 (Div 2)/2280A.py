@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, k = map(int, input().split())
@@ -14,6 +16,7 @@ def solve():
         odd_a = sum(1 for x in a if x % 2 != 0)
         odd_b = sum(1 for x in b if x % 2 != 0)
         return "YES" if odd_b <= odd_a else "NO"
+
 
 t = int(input())
 for _ in range(t):

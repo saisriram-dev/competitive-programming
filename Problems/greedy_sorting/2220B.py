@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, m = map(int, input().split())
@@ -16,6 +18,7 @@ def solve():
         i = j
 
     return "YES" if cnt < m else "NO"
+
 
 t = int(input())
 for _ in range(t):

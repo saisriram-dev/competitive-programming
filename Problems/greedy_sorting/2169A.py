@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, a = map(int, input().split())
@@ -18,6 +20,7 @@ def solve():
         return a - 1
     else:
         return a + 1
+
 
 t = int(input())
 for _ in range(t):

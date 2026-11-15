@@ -17,10 +17,11 @@ def solve():
                 greater += 1
             elif arr[j] < arr[i]:
                 lesser += 1
-        
+
         res.append(max(greater, lesser))
 
     return res
+
 
 t = int(input())
 for _ in range(t):

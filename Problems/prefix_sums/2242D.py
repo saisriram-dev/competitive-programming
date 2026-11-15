@@ -1,10 +1,12 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
     a = list(map(int, input().split()))
-    
+
     # pref1: 1 -> +1, (2 or 3) -> -1   (left part score)
     # pref2: (1 or 2) -> +1, 3 -> -1   (middle part score)
     pref1 = [0] * (n + 1)
@@ -14,9 +16,9 @@ def solve():
         pref1[i] = pref1[i - 1] + (1 if v == 1 else -1)
         pref2[i] = pref2[i - 1] + (-1 if v == 3 else 1)
 
-    INF = float('inf')
+    INF = float("inf")
     best = INF
-    
+
     for y in range(2, n):
         x = y - 1
         if pref1[x] >= 0:

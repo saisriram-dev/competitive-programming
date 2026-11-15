@@ -1,5 +1,6 @@
 n, x, y = map(int, input().split())
 
+
 def check(T):
     first = min(x, y)
 
@@ -10,6 +11,7 @@ def check(T):
     copies = (remaining // x) + (remaining // y)
 
     return copies >= n - 1
+
 
 left, right = 0, (n * min(x, y))
 ans = -1

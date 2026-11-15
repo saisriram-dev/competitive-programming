@@ -1,6 +1,8 @@
 import sys
 from collections import defaultdict
+
 input = sys.stdin.readline
+
 
 def solve():
     n, k = map(int, input().split())
@@ -22,7 +24,7 @@ def solve():
         balanced += remainder_count[current_rem]
 
     return balanced
-    
+
 
 t = int(input())
 for _ in range(t):

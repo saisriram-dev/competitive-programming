@@ -5,12 +5,12 @@ for _ in range(t):
     s = input().strip()
 
     # Case 1: starts with 1
-    if s[0] == '1':
-        print(s.count('0'))
+    if s[0] == "1":
+        print(s.count("0"))
         continue
 
     # Case 2: starts with 0
-    total_zeros = s.count('0')
+    total_zeros = s.count("0")
 
     ones_before = 0
     zeros_after = total_zeros
@@ -19,7 +19,7 @@ for _ in range(t):
 
     for ch in s:
 
-        if ch == '1':
+        if ch == "1":
             ones_before += 1
         else:
             zeros_after -= 1

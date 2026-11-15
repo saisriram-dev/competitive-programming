@@ -1,6 +1,8 @@
 from collections import Counter
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input().strip())
@@ -11,6 +13,7 @@ def solve():
         return "Elsie"
     else:
         return "Bessie"
+
 
 t = int(input().strip())
 for _ in range(t):

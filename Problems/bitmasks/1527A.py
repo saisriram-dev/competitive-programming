@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -12,6 +14,7 @@ def solve():
         count += 1
 
     return curr
+
 
 t = int(input())
 for _ in range(t):

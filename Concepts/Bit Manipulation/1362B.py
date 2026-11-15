@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -11,6 +13,7 @@ def solve():
             return mask
 
     return -1
+
 
 t = int(input())
 for _ in range(t):

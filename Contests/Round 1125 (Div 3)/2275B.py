@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     documents = int(input())
@@ -25,6 +27,7 @@ def solve():
         print(*unprinted)
     else:
         print()
+
 
 t = int(input())
 for _ in range(t):

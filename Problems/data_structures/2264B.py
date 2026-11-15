@@ -1,6 +1,8 @@
 import heapq
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n, m = map(int, input().split())
@@ -11,7 +13,7 @@ def solve():
 
     running_sum = 0
     max_heap = []
-    ans = float('-inf')
+    ans = float("-inf")
 
     for i in range(n):
         if len(max_heap) == m - 1:
@@ -30,6 +32,7 @@ def solve():
             running_sum += arr[i]
 
     return ans
+
 
 t = int(input().strip())
 for _ in range(t):

@@ -22,7 +22,7 @@ def solve():
         for j in range(i, i + 3):
             count += 1
             if count == 3:
-                total -= even[j] 
+                total -= even[j]
             else:
                 total += even[j]
         even_triads.append(total)

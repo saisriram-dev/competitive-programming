@@ -4,6 +4,7 @@ nb, ns, nc = list(map(int, input().split()))  # Fixed: added .split()
 pb, ps, pc = list(map(int, input().split()))  # Fixed: added .split()
 money = int(input())
 
+
 def check(x):
     b_need = s_need = c_need = 0
     pb_need = max(0, (x * b) - nb) * pb
@@ -13,7 +14,8 @@ def check(x):
     total = pb_need + ps_need + pc_need
     return True if money >= total else False
 
-low, high = 0, 10 ** 13
+
+low, high = 0, 10**13
 ans = 0
 
 while low <= high:

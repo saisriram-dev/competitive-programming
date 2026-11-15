@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     piles = list(map(int, input().split()))
@@ -15,6 +17,6 @@ def solve():
         return abs((piles[0] + piles[2]) - piles[1])
 
 
-n = int(input())             # first line: how many words follow
+n = int(input())  # first line: how many words follow
 for _ in range(n):
     print(solve())

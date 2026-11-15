@@ -1,19 +1,21 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
     arr = list(map(int, input().split()))
 
-    first = float('inf')
-    last = float('-inf')
-    
+    first = float("inf")
+    last = float("-inf")
+
     for i in range(n):
         if arr[i] != 0:
             first = min(first, i)
             last = max(last, i)
 
-    if first == float('inf'):
+    if first == float("inf"):
         return " ".join(map(str, arr))
 
     for i in range(int(first), int(last + 1)):
@@ -23,6 +25,7 @@ def solve():
             arr[i] = 0
 
     return " ".join(map(str, arr))
+
 
 t = int(input())
 for _ in range(t):

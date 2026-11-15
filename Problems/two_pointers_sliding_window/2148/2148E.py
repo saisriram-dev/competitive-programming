@@ -1,6 +1,8 @@
 import sys
+
 input = sys.stdin.readline
 from collections import Counter
+
 
 def solve():
     n, k = map(int, input().split())
@@ -21,6 +23,7 @@ def solve():
                 break
             count += 1
     return count
+
 
 t = int(input())
 for _ in range(t):

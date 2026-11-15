@@ -1,6 +1,8 @@
 import sys
 import math
+
 input = sys.stdin.readline
+
 
 def solve():
     a, b = map(int, input().split())
@@ -11,6 +13,7 @@ def solve():
         return "YES"
     else:
         return "NO"
+
 
 t = int(input())
 for _ in range(t):

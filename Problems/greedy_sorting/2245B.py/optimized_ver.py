@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -19,6 +21,7 @@ def solve():
             max_reduction = 1
 
     return initial_len - max_reduction
+
 
 t = int(input().strip())
 for _ in range(t):

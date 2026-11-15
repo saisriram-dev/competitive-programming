@@ -1,6 +1,8 @@
 from collections import Counter
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -17,6 +19,7 @@ def solve():
     counts = Counter(arr)
 
     return max(counts.values())
+
 
 t = int(input().strip())
 for _ in range(t):

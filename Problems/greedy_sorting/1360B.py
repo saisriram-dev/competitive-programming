@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -7,7 +9,7 @@ def solve():
 
     # Sort the array directly (duplicates are handled naturally since diff == 0 <= 1)
     arr.sort()
-    min_diff = float('inf')
+    min_diff = float("inf")
 
     for i in range(1, n):
         # No need of abs as the array is already sorted
@@ -16,7 +18,7 @@ def solve():
 
     return min_diff
 
-    
+
 t = int(input())
 for _ in range(t):
     print(solve())

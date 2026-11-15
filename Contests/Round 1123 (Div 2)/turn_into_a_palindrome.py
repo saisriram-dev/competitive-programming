@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     line1 = input().split()
@@ -24,6 +26,7 @@ def solve():
             coins += 1
 
     print(coins)
+
 
 if __name__ == "__main__":
     t_str = input().strip()

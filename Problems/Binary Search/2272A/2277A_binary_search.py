@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def can(M, cnt, k):
     # Can we build groups with maxima 0, 1, ..., M-1?
@@ -13,6 +15,7 @@ def can(M, cnt, k):
         spare = available - k
     return True
 
+
 def solve():
     n, k = map(int, input().split())
     arr = list(map(int, input().split()))
@@ -25,10 +28,11 @@ def solve():
     while lo < hi:
         mid = (lo + hi + 1) // 2
         if can(mid, cnt, k):
-            lo = mid        # mid works, so the answer is at least mid
+            lo = mid  # mid works, so the answer is at least mid
         else:
-            hi = mid - 1    # mid fails, so the answer is below mid
+            hi = mid - 1  # mid fails, so the answer is below mid
     return lo
+
 
 t = int(input())
 for _ in range(t):

@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -21,6 +23,7 @@ def solve():
             arr[i] = 0
 
     return " ".join(map(str, arr))
+
 
 t = int(input())
 for _ in range(t):

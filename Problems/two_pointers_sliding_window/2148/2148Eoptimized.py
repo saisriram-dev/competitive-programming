@@ -1,11 +1,13 @@
 import sys
+
 input = sys.stdin.readline
 from collections import Counter
+
 
 def solve():
     n, k = map(int, input().split())
     a = list(map(int, input().split()))
-    
+
     total = [0] * (n + 1)
     for num in a:
         total[num] += 1

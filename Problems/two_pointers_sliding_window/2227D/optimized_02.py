@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -12,7 +14,7 @@ def solve():
     def expand(l, r):
         seen = [False] * (n + 1)
         mex = 0
-        while l >= 0  and r < m and arr[l] == arr[r]:
+        while l >= 0 and r < m and arr[l] == arr[r]:
             seen[arr[l]] = True
             while seen[mex]:
                 mex += 1
@@ -24,9 +26,11 @@ def solve():
 
     s = x + y
     if s % 2 == 0:
-        best = max(best, expand(s // 2, s // 2))        # odd palindrome, x and y mirrored
+        best = max(best, expand(s // 2, s // 2))  # odd palindrome, x and y mirrored
     else:
-        best = max(best, expand(s // 2, s // 2 + 1))    # even palindrome, x and y mirrored
+        best = max(
+            best, expand(s // 2, s // 2 + 1)
+        )  # even palindrome, x and y mirrored
 
     return best
 

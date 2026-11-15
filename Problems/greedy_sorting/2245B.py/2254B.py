@@ -1,5 +1,6 @@
 import sys
 
+
 def solve():
     n = int(input().strip())
     seq = input().strip()
@@ -16,15 +17,14 @@ def solve():
     m = len(blocks)
     seen = set()
 
-    
     for i in range(1, m - 1):
         char, width = blocks[i]
-        
+
         if width == 1:
             if blocks[i - 1][0] == blocks[i + 1][0]:
-                seen.add("YES")  
+                seen.add("YES")
             else:
-                seen.add("NO")   
+                seen.add("NO")
 
     if "YES" in seen:
         return m - 2

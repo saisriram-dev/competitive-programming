@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def compress(string):
     res = []
@@ -7,6 +9,7 @@ def compress(string):
         if not res or res[-1] != char:
             res.append(char)
     return "".join(res)
+
 
 def solve():
     num = input().strip()
@@ -20,13 +23,14 @@ def solve():
     for i in range(1, len(num) - 1):
         if num[i - 1] == num[i + 1]:
             val = "0" if num[i] == "1" else "1"
-            compressed = compress(num[:i] + val + num[i+1:])
-            
+            compressed = compress(num[:i] + val + num[i + 1 :])
+
             if compressed not in words:
                 words.add(compressed)
                 count += 1
 
     return count
+
 
 t = int(input())
 for _ in range(t):

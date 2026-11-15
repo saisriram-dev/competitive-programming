@@ -1,6 +1,7 @@
 def check():
     pass
 
+
 def find_fisrt_false(low, high):
     ans = -1
 

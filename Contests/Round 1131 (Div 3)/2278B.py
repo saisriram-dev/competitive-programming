@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     x, y, z = map(int, input().split())
@@ -10,6 +12,7 @@ def solve():
         return "R" * (x + y + z)
     else:
         return "P" * (x + y + z)
+
 
 t = int(input())
 for _ in range(t):

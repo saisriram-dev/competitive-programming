@@ -24,21 +24,21 @@ def solve():
     # 2. FIX: Propagate known values so your adjacent check catches long-range contradictions
     # Forward pass for odd
     for k in range(1, len(odd)):
-        if odd[k-1] != "?" and odd[k] == "?":
-            odd[k] = complements[odd[k-1]]
+        if odd[k - 1] != "?" and odd[k] == "?":
+            odd[k] = complements[odd[k - 1]]
     # Backward pass for odd
-    for k in range(len(odd)-2, -1, -1):
-        if odd[k+1] != "?" and odd[k] == "?":
-            odd[k] = complements[odd[k+1]]
+    for k in range(len(odd) - 2, -1, -1):
+        if odd[k + 1] != "?" and odd[k] == "?":
+            odd[k] = complements[odd[k + 1]]
 
     # Forward pass for even
     for k in range(1, len(even)):
-        if even[k-1] != "?" and even[k] == "?":
-            even[k] = complements[even[k-1]]
+        if even[k - 1] != "?" and even[k] == "?":
+            even[k] = complements[even[k - 1]]
     # Backward pass for even
-    for k in range(len(even)-2, -1, -1):
-        if even[k+1] != "?" and even[k] == "?":
-            even[k] = complements[even[k+1]]
+    for k in range(len(even) - 2, -1, -1):
+        if even[k + 1] != "?" and even[k] == "?":
+            even[k] = complements[even[k + 1]]
 
     # 3. YOUR EXACT LOGIC: Verifying if adjacent pairs are not equal in both lists
     i = 0

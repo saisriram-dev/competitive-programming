@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def compress(string):
     res = []
@@ -7,6 +9,7 @@ def compress(string):
         if not res or res[-1] != char:
             res.append(char)
     return "".join(res)
+
 
 def solve():
     num = input().strip()
@@ -31,6 +34,7 @@ def solve():
             break
 
     return len(possible_lengths)
+
 
 t = int(input())
 for _ in range(t):

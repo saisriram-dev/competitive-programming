@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -18,6 +20,7 @@ def solve():
         max_ans = max(max_ans, dp[i])
 
     return max_ans
+
 
 t = int(input())
 for _ in range(t):

@@ -51,8 +51,8 @@
 # CODE WITH DETAILED EXPLANATIONS
 
 
-a = [10, 20, 30, 40, 50]          # Original array (0-based indexing)
-n = len(a)                        # n = 5
+a = [10, 20, 30, 40, 50]  # Original array (0-based indexing)
+n = len(a)  # n = 5
 
 # Create prefix array of size n+1.
 # Why n+1?  So that prefix[0] can be 0 and the formula stays clean:
@@ -79,6 +79,7 @@ print("Prefix array:", prefix)
 #   prefix[L]   = a[0] + a[1] + ... + a[L-1]
 #   subtracting cancels everything before L → leaves exactly a[L..R]
 
+
 def range_sum(L, R):
     """
     Returns sum of a[L..R] (inclusive) in O(1) time.
@@ -88,10 +89,10 @@ def range_sum(L, R):
 
 
 # ---------- Examples ----------
-print("Sum of whole array a[0..4]:", range_sum(0, 4))   # 150
-print("Sum a[1..3] (20+30+40):",     range_sum(1, 3))   # 90
-print("Sum a[2..4] (30+40+50):",     range_sum(2, 4))   # 120
-print("Single element a[3]:",        range_sum(3, 3))   # 40
+print("Sum of whole array a[0..4]:", range_sum(0, 4))  # 150
+print("Sum a[1..3] (20+30+40):", range_sum(1, 3))  # 90
+print("Sum a[2..4] (30+40+50):", range_sum(2, 4))  # 120
+print("Single element a[3]:", range_sum(3, 3))  # 40
 
 
 # EXTRA: Handling 1-based indexing (common in competitive programming)

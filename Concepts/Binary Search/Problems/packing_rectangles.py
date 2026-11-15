@@ -1,7 +1,9 @@
 w, h, n = map(int, input().split())
 
+
 def check(x):
     return (x // w) * (x // h) >= n
+
 
 left, right = 0, max(w, h) * n
 

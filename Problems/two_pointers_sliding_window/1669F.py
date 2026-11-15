@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -10,7 +12,7 @@ def solve():
 
     left = arr[i]
     right = arr[j]
-    
+
     candies = [0]
 
     while i < j:
@@ -30,8 +32,9 @@ def solve():
             if i < j:
                 left += arr[i]
                 right += arr[j]
-    
+
     return max(candies)
+
 
 t = int(input())
 for _ in range(t):

@@ -1,5 +1,7 @@
 import sys
+
 input = sys.stdin.readline
+
 
 def solve():
     n = int(input())
@@ -13,6 +15,7 @@ def solve():
             return "NO"
 
     return "YES"
+
 
 t = int(input())
 for _ in range(t):
