@@ -11,7 +11,7 @@ def solve():
     g = gcd(x, y)
 
     for i in range(n):
-        if (i + 1) % g == a[i] % g:
+        if (i + 1) % g != a[i] % g:
             return "NO"
 
     return "YES"
